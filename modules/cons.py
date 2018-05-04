@@ -23,7 +23,6 @@ import os
 import sys
 import tempfile
 
-
 VERSION = "0.38.4"
 APP_NAME = "cherrytree"
 NEWER_VERSION_URL = "http://www.giuspen.com/software/version_cherrytree"
@@ -242,10 +241,12 @@ HTML_HEADER = '''<!doctype html><html>
 HTML_FOOTER = '</body></html>'
 
 STOCKS_N_FILES = [
-'node_bullet', 'node_no_icon', CHERRY_BLACK, CHERRY_BLUE,
-CHERRY_CYAN, CHERRY_GREEN, CHERRY_GRAY, CHERRY_ORANGE,
-CHERRY_ORANGE_DARK, CHERRY_PURPLE, CHERRY_RED, CHERRY_SHERBERT,
-CHERRY_YELLOW, 'image_insert', 'screenshot_insert', 'image_edit', 'image_save',
+'node_bullet', 'node_no_icon',
+'display', 'file', 'folder_simple', 'moon', 'settings', 'windows',
+CHERRY_BLACK, CHERRY_BLUE, CHERRY_CYAN, CHERRY_GREEN,
+CHERRY_GRAY, CHERRY_ORANGE, CHERRY_ORANGE_DARK, CHERRY_PURPLE,
+CHERRY_RED, CHERRY_SHERBERT, CHERRY_YELLOW,
+'image_insert', 'screenshot_insert', 'image_edit', 'image_save',
 'table_insert', 'table_edit', 'table_save', 'codebox_insert',
 'codebox_edit', 'anchor_insert', 'anchor_edit', 'anchor',
 'insert', 'link_handle', 'link_website', 'cherry_edit',
@@ -270,7 +271,7 @@ CHERRY_YELLOW, 'image_insert', 'screenshot_insert', 'image_edit', 'image_save',
 'locked', 'unlocked', 'lockpin', 'people', 'urgent', 'folder', 'leaf',
 'xml', 'c', 'cpp', 'perl',
 ]
-NODES_STOCKS_KEYS = [1,2,3,4,5,6,7,8,9,40,41,42,10,43,11,12,13,14,15,16,44,18,19,20,39,38,21,22,23,24,46,47,48,17,25,26,45,27,28,29,30,31,32,33,34,35,36,37]
+NODES_STOCKS_KEYS = [1,2,3,4,5,6,7,8,9,40,41,42,10,43,11,12,13,14,15,16,44,49,50,51,18,19,20,39,38,21,22,23,24,46,47,48,17,25,26,45,27,28,29,30,31,32,33,34,35,36,37,52,53,54]
 NODES_STOCKS = {
  1: 'circle-green',
  2: 'circle-yellow',
@@ -320,6 +321,12 @@ NODES_STOCKS = {
 46: 'xml',
 47: 'c',
 48: 'cpp',
+49: 'folder_simple',
+50: 'file',
+51: 'settings',
+52: 'display',
+53: 'windows',
+54: 'moon',
 }
 NODES_ICONS = {
 0: CHERRY_RED,
